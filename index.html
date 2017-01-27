@@ -15,7 +15,7 @@
       			<a href="#">Фото и видео</a>
       		</li>
       	</ul>
-      	<a href="#"><img src="./img/logo.png" alt="Логотип"></a>
+      	<div><img src="./img/logo.png" alt="Логотип"></div>
       	<ul>	
       		<li>
       			<a href="#">Карта штата</a>
@@ -33,58 +33,59 @@
          	<h2>Седона - небольшой городок в Аризоне, заслуживющий большего!</h2>
          	<p>Рассмотрим 5 причин, по которым Седона лучше, чем Гранд Каньон!</p>
          </div> 
-         <div class="description">
-            <div class="description1">
-            	<div class="description1-text">
+         <div class="descriptions">
+            <div class="description">
+            	<div class="description-text">
             		<h2>Настоящий городок</h2>
             		<p>- №1 -</p>
             		<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
                	</div>
-               	<div class="description1-pic">
+               	<div class="description-pic">
                		<img src="/" alt="Городок">
                	</div>
             </div>
-            <div class="description2">
-            	<div class="description2-block1">
+            <div class="description-icon">
+            	<div class="description-icon-block">
             		<h2>Жилье</h2>
             		<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             	</div>
-            	<div class="description2-block2">
+            	<div class="description-icon-block">
             		<h2>Еда</h2>
             		<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             	</div>
-            	<div class="description2-block3">
+            	<div class="description-icon-block">
             		<h2>Сувениры</h2>
             		<p>Не только китайского, но и местного производства</p>
             	</div>
             </div>
-            <div class="description3">
-            	<div class="description3-pic">
+            <div class="description">
+            	<div class="description-pic">
             		<img src="/" alt="Мост Дьявола">
             	</div>
-            	<div class="description3-text">
+            	<div class="description-text">
             		<h2>Там есть мост дьявола</h2>
             		<p>- №2 -</p>
             		<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             	</div>
-            	<div class="description4">
-            		<div class="description4-block1">
-            			<h2>Небольшая площадь</h2>
-            			<p>- №3 -</p>
-            			<p>Все достопримечательности находятся очень близко</p>
-            		</div>
-            		<div class="description4-block2">
-            			<h2>Красивая дорога</h2>
-            		    <p>- №4 -</p>
-            		    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            		</div>
-            		<div class="description4-block3">
-            			<h2>Мало туристов</h2>
-            		    <p>- №5 -</p>
-            		    <p>Большинство едет в Гранд Каньон и толпится там</p>
-            		</div>
+            </div>	
+            <div class="description">
+            	<div class="description-block">
+            		<h2>Небольшая площадь</h2>
+            		<p>- №3 -</p>
+            		<p>Все достопримечательности находятся очень близко</p>
+            	</div>
+            	<div class="description-block">
+            		<h2>Красивая дорога</h2>
+            		<p>- №4 -</p>
+            		<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            	</div>
+            	<div class="description-block">
+            		<h2>Мало туристов</h2>
+            		<p>- №5 -</p>
+            		<p>Большинство едет в Гранд Каньон и толпится там</p>
             	</div>
             </div>
+            
          	
          </div>
          <div class="buy">
@@ -95,18 +96,33 @@
          	<div class="buy-order">
          	    <form action="#" method="post" name="buy-order">
          		    <h2>Поиск гостиницы в Седоне</h2>
-         		    <label>Дата заезда:
-         		    	<input type="date">
-         		    </label>
-         		    <label>Дата выезда:
-         		    	<input type="date">
-         		    </label>
-         		    <label>Взрослые:
-         		        <input type="number" min="0" max="20" step="1" value="2">
-         		    </label>    
-         		    <label>Дети:
-         		    	<input type="number" min="0" max="20" step="1" value="0">
-         		    </label>
+         		    <div class="buy-date">
+         		        <label>Дата заезда:
+         		    	    <input type="date">
+         		        </label>
+         		        <p>24 апреля 2016</p>
+         		        <img src="/" alt="Календарь">
+         		    </div>
+         		    <div class="buy-date">    
+         		        <label>Дата выезда:
+         		    	    <input type="date">
+         		        </label>
+         		        <p>4 июля 2016</p>
+         		        <img src="/" alt="Календарь">
+         		    </div> 
+         		    <div class="buy-numbers"> 
+         		        <div class="buy-number">  
+         		            <label>Взрослые:
+         		                <input type="number" min="0" max="20" step="1" value="2">
+               		        </label>    
+               		    </div>
+               		    <div class="buy-number">    
+         		            <label>Дети:
+         		    	        <input type="number" min="0" max="20" step="1" value="0">
+         		            </label>
+         		        </div>  
+         		    </div>   
+         		    <button>Найти</button>   
                 </form>
          	</div>
          	<div class="map">
@@ -123,7 +139,7 @@
           
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-n" href="#">Незнаючтоэто</a>
+          <a class="social-btn social-btn-yt" href="#">Ютуб</a>
         </section>
         <section class="footer-copyright">
           <span>website by</span>
