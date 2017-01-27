@@ -3,7 +3,7 @@ body {
 	line-height: 21px;
 	color: #333333;
 	font-weight: normal;
-	font-family: PTSans;
+	font-family: PTSans, sans-serif;
 }
 
 h2 {
@@ -11,5 +11,5 @@ h2 {
 	line-height: 26px;
 	color: #000000;
 	font-weight: normal;
-	font-family: PTSans;
+	font-family: PTSans, sans-serif;
 }
