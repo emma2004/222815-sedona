@@ -6,26 +6,30 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" >
   </head>
   <body>
-      <nav class="main-navigation">
-      	<ul>
-      		<li>
-      			<a href="#">Информация</a>
-      		</li>
-      		<li>
-      			<a href="#">Фото и видео</a>
-      		</li>
-      	</ul>
-      	<div><img src="./img/logo.png" alt="Логотип"></div>
-      	<ul>	
-      		<li>
-      			<a href="#">Карта штата</a>
-      		</li>
-      		<li>
-      			<a href="#">Гостиницы</a>
-      		</li>
-      	</ul>
-      </nav>
-      <main>
+      <header class="main-header">
+          <div class="container">
+              <nav class="main-navigation">
+      	          <ul>
+      		          <li>
+      			          <a href="#">Информация</a>
+      		          </li>
+      		          <li>
+      			          <a href="#">Фото и видео</a>
+      		          </li>
+      	          </ul>
+      	          <a><img src="./img/logo.png" alt="Логотип"></a>
+      	          <ul>	
+      		          <li>
+      			          <a href="#">Карта штата</a>
+      		          </li>
+      		          <li>
+      			          <a href="#">Гостиницы</a>
+      		          </li>
+      	          </ul>
+              </nav>
+          </div>
+      </header>
+      <main class="container">
          <div class="hello">
         	<img src="/" alt="Приветствие">
          </div>
@@ -34,41 +38,41 @@
          	<p>Рассмотрим 5 причин, по которым Седона лучше, чем Гранд Каньон!</p>
          </div> 
          <div class="descriptions">
-            <div class="description">
-            	<div class="description-text">
+            <div class="description clearfix">
+            	<div class="description-text1">
             		<h2>Настоящий городок</h2>
             		<p>- №1 -</p>
             		<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
                	</div>
-               	<div class="description-pic">
+               	<div class="description-pic1">
                		<img src="/" alt="Городок">
                	</div>
             </div>
-            <div class="description-icon">
-            	<div class="description-icon-block">
+            <div class="description-icons clearfix">
+            	<div class="description-block">
             		<h2>Жилье</h2>
             		<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             	</div>
-            	<div class="description-icon-block">
+            	<div class="description-block">
             		<h2>Еда</h2>
             		<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             	</div>
-            	<div class="description-icon-block">
+            	<div class="description-block">
             		<h2>Сувениры</h2>
             		<p>Не только китайского, но и местного производства</p>
             	</div>
             </div>
-            <div class="description">
-            	<div class="description-pic">
+            <div class="description clearfix">
+            	<div class="description-pic2">
             		<img src="/" alt="Мост Дьявола">
             	</div>
-            	<div class="description-text">
+            	<div class="description-text2">
             		<h2>Там есть мост дьявола</h2>
             		<p>- №2 -</p>
             		<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             	</div>
             </div>	
-            <div class="description">
+            <div class="description-blocks clearfix">
             	<div class="description-block">
             		<h2>Небольшая площадь</h2>
             		<p>- №3 -</p>
@@ -88,7 +92,7 @@
             
          	
          </div>
-         <div class="buy">
+         <div class="buy container">
          	<div class="buy-text">
          		<p>Заинтересовались?</p>
          		<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -131,7 +135,7 @@
          </div>
       </main>
       <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           <a href="#">#Visitsedona<a>
         </section>

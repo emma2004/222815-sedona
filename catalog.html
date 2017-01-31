@@ -6,30 +6,34 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" >
   </head>
   <body>
-      <nav class="main-navigation">
-      	<ul>
-      		<li>
-      			<a href="#">Информация</a>
-      		</li>
-      		<li>
-      			<a href="#">Фото и видео</a>
-      		</li>
-      	</ul>
-      	<a href="#"><img src="./img/logo.png" alt="Логотип"></a>
-      	<ul>	
-      		<li>
-      			<a href="#">Карта штата</a>
-      		</li>
-      		<li>
-      			<a href="#">Гостиницы</a>
-      		</li>
-      	</ul>
-      </nav>
+      <header class="main-header">
+          <div class="container">
+              <nav class="main-navigation">
+      	          <ul>
+      		          <li>
+      			          <a href="#">Информация</a>
+      		          </li>
+      		          <li>
+      			          <a href="#">Фото и видео</a>
+      		          </li>
+      	          </ul>
+      	          <a href="#"><img src="./img/logo.png" alt="Логотип"></a>
+      	          <ul>	
+      		          <li>
+      			          <a href="#">Карта штата</a>
+      		          </li>
+      		          <li>
+      			          <a href="#">Гостиницы</a>
+      		          </li>
+      	          </ul>
+              </nav>
+          </div>
+      </header>
 
-      <main>
-      	
+      <main class="container clearfix">
+      	    <div class="bay-form">
       		<form action="#" method="post" name="bay-order">
-      		    <div class="bay-order-options">
+      		    <div class="bay-order-option1">
       			    <p class="h3">Инфраструктура:</p>
       			        <div class="bay-option">
       				        <input type="checkbox" checked id="opt1">
@@ -44,7 +48,7 @@
       			        	<label for="opt3">Wi-Fi</label>
       			        </div>
       			</div>
-      			<div class="bay-order-options">
+      			<div class="bay-order-option1">
       				<p class="h3">Тип жилья:</p>
       				   <div class="bay-option">
       				   	    <input type="checkbox" checked id="opt4">
@@ -68,24 +72,24 @@
       					</tr>
        				</table>
        				<input type="range" min="0" max="3000" value="2500">
-       				
-      			</div>
-      			<div class="bay-button">
-      				<button>Показать</button>
+       				<div>   			
+      				    <button>Показать</button>
+      				</div>    
       			</div>
       		</form>
+      		</div>
 
       		<div class="search">
       		    <div class="search-text">
-      		        <p class="h2">Найдено 3:</p>
-      		        <p>Сортировка:</p>
-      		        <span>по цене</span>
-      		        <a href="#">по типу</a>
+      		        <span class="h2">Найдено 3:</span>
+      		        <span>Сортировка:</span>
+      		        <span>по цене</span> 
+      		        <a href="#">по типу</a> 
       		        <a href="#">по рейтингу</a>
       		    </div>
       		    <div class="search-pic">
       		        <a href="#">Стрелка вверх</a>
-      		        <a href="#">Стредка вниз</a>
+      		        <a href="#">Стрелка вниз</a>
       		    </div>        
 
       		</div>
@@ -100,6 +104,7 @@
       				<a class="btn" href="#">Забронировать</a>
       			</div>
       			<div class="result-rating">
+      			    <span>звездочки</span>
       				<p>рейтинг 8,5</p>
       			</div>
       		</div>
@@ -115,6 +120,7 @@
       				<a class="btn" href="#">Забронировать</a>
       			</div>
       			<div class="result-rating">
+      			    <span>звездочки</span>
       				<p>рейтинг 8,9</p>
       			</div>
       		</div>
@@ -130,6 +136,7 @@
       				<a class="btn" href="#">Забронировать</a>
       			</div>
       			<div class="result-rating">
+      			    <span>звездочки</span>
       				<p>рейтинг 9,2</p>
       			</div>
       		</div>
@@ -137,7 +144,7 @@
       </main> 
 
       <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           <a href="#">#Visitsedona<a>
         </section>

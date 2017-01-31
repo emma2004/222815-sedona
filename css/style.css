@@ -13,3 +13,192 @@ h2 {
 	font-weight: normal;
 	font-family: PTSans, sans-serif;
 }
+
+li {
+	list-style-type: none;
+}
+
+.main-header {
+	margin-bottom: 74px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-navigation {
+    min-height: 56px;
+    width: 1200px;
+}
+
+.hello {
+    width: 460px;
+    height: 358px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+}
+
+.subject {
+    width: 500px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 55px;
+}
+
+.description {
+	height: 258px;
+}
+
+.description-text1 {
+	width: 400px;
+	float: left;
+}
+
+.description-pic1 {
+	width: 800px;
+	float: right;
+}
+
+.description-icons {
+    height: 190px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.description-block {
+	float:left;
+	width: 390px;
+	padding-right: 15px;
+
+}
+
+.description-block:last-child {
+	padding-right: 0;
+}
+
+.description-text2 {
+	width: 400px;
+	float: right;
+}
+
+.description-pic2 {
+	width: 800px;
+	float: left;
+}
+
+.description-blocks {
+    height: 255px;
+}
+
+.buy {
+	height: 765px;
+}
+
+.buy-text {
+	width: 441px;
+    height: 290px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.map {
+	height: 475px;
+}
+
+.main-footer {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.footer-contacts {
+	float: left;
+	width: 145px;
+	margin-right: 127px;
+}
+
+.footer-social {
+	float: left;
+	width: 155px;
+	margin-right: 250px;
+}
+
+.footer-copiright {
+	float: right;
+	width: 200px;
+}
+
+.bay-form {
+	height: 215px;
+	padding: 25px 73px;
+}
+
+.bay-order-option1 {
+	height: 160px;
+	width: 150px;
+	float: left;
+}
+
+.bay-order-option2 {
+	height: 160px;
+	width: 328px;
+	float: right;
+}
+
+.search {
+	height: 87px;
+	padding: 30px 73px;
+}
+
+.search-text {
+	height: 22px;
+	float: left;
+}
+
+.search-pic {
+	height: 15px;
+	width: 35px;
+	float: right;
+}
+
+.result {
+	height: 152px;
+	padding: 30px 73px;
+}
+
+.result-pic {
+    height: 90px;
+    width: 135px;
+    float: left;
+}
+
+.result-choice {
+	height: 90px;
+	width: 260px;
+	margin-right: 30px;
+	float: left;
+}
+
+.result-rating {
+	height: 90px;
+	width: 120px;
+	float: right;
+}
+
+
+
+
+
+
+
+
+
