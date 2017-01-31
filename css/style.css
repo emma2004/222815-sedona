@@ -173,6 +173,11 @@ li {
 .result {
 	height: 152px;
 	padding: 30px 73px;
+	border-top: 1px solid #000000;
+}
+
+.result:last-child {
+    border-bottom: 1px solid #000000;
 }
 
 .result-pic {
