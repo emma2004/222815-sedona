@@ -1,9 +1,13 @@
 body {
+	min-width: 1200px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
 	font-weight: normal;
 	font-family: PTSans, sans-serif;
+	/*
+	background: url(../img/sedona-index-1200.jpg) no-repeat; 
+	*/
 }
 
 h2 {
@@ -19,13 +23,13 @@ li {
 }
 
 .main-header {
-	margin-bottom: 74px;
+	
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 0px;
+    padding: 0 10px;
 }
 
 .clearfix::after {
@@ -46,14 +50,15 @@ li {
 }
 
 .column1 {
-	width: 128px;
-	margin-right: 100px;
 	margin-left: 73px;
+	width: 127px;
+	margin-right: 93px;
+	
 }
 
 .column2 {
-	width: 112px;
-	margin-right: 85px;
+	width: 104px;
+	margin-right: 100px;
 }
 
 .column3 {
@@ -63,12 +68,14 @@ li {
 }
 
 .column4 {
-	width: 100px;
+	width: 124px;
 	margin-right: 100px;
 }
 
 .column5 {
 	width: 128px;
+	margin-right: 33px;
+
 }
 
 .hello {
