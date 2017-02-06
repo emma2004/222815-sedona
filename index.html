@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css" >
   </head>
   <body>
@@ -10,19 +12,19 @@
           <div class="container">
               <nav class="main-navigation">
       	          <ul>
-      		          <li class="column1">
+      		          <li class="column">
       			          <a href="#">Информация</a>
       		          </li>
-      		          <li class="column2">
+      		          <li class="column">
       			          <a href="#">Фото и видео</a>
       		          </li>
-      	              <li class="column3">
-      	                  <a><img src="./img/logo.png" alt="Логотип"></a>
-      	              </li>    
-      	              <li class="column4">
+      	              <li>
+      	                  <a class="logo"><img src="./img/logo.png" alt="Логотип"></a>
+      	              </li>>       
+      	              <li class="column">
       			          <a href="#">Карта штата</a>
       		          </li>
-      		          <li class="column5">
+      		          <li class="column">
       			          <a href="#">Гостиницы</a>
       		          </li>
       	          </ul>
@@ -92,51 +94,57 @@
             		<p>Большинство едет в Гранд Каньон и толпится там</p>
             	</div>
             </div>
-            
-         	
          </div>
-         <div class="buy container">
+
+
+         <div class="buy">
+
          	<div class="buy-text">
          		<p>Заинтересовались?</p>
          		<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
          	</div>
-         	<div class="buy-order">
+
+         	<div class="buy-order container">
          	    <form action="#" method="post" name="buy-order">
          		    <h2>Поиск гостиницы в Седоне</h2>
          		    <div class="buy-date">
          		        <label>Дата заезда:
          		    	    <input type="date">
          		        </label>
-         		        <p>24 апреля 2016</p>
-         		        <img src="/" alt="Календарь">
+         		        <p class="inline">24 апреля 2016</p>
+         		        <img src="./img/calendar.png" alt="Календарь">
          		    </div>
          		    <div class="buy-date">    
          		        <label>Дата выезда:
          		    	    <input type="date">
          		        </label>
-         		        <p>4 июля 2016</p>
-         		        <img src="/" alt="Календарь">
+         		        <p class="inline">4 июля 2016</p>
+         		        <img src="./img/calendar.png" alt="Календарь">
          		    </div> 
-         		    <div class="buy-numbers"> 
-         		        <div class="buy-number">  
+         		    <div class="buy-numbers clearfix"> 
+         		        <div class="buy-number fl-left">  
          		            <label>Взрослые:
          		                <input type="number" min="0" max="20" step="1" value="2">
                		        </label>    
                		    </div>
-               		    <div class="buy-number">    
+               		    <div class="buy-number fl-right">    
          		            <label>Дети:
          		    	        <input type="number" min="0" max="20" step="1" value="0">
          		            </label>
          		        </div>  
          		    </div>   
-         		    <button>Найти</button>   
+         		    <button class="btn-search">Найти</button>   
                 </form>
          	</div>
+
          	<div class="map">
          		<img src="/" alt="Как добраться">
          	</div>
+
          </div>
       </main>
+
+
       <footer class="main-footer">
       <div class="container clearfix">
         <section class="footer-contacts">

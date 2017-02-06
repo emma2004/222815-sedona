@@ -4,7 +4,9 @@ body {
 	line-height: 21px;
 	color: #333333;
 	font-weight: normal;
-	font-family: PTSans, sans-serif;
+	font-family: "PTSans", "Arial", sans-serif;
+	background-color: #ffffff;
+	text-transform: uppercase;
 	/*
 	background: url(../img/sedona-index-1200.jpg) no-repeat; 
 	*/
@@ -15,11 +17,7 @@ h2 {
 	line-height: 26px;
 	color: #000000;
 	font-weight: normal;
-	font-family: PTSans, sans-serif;
-}
-
-li {
-	list-style-type: none;
+	font-family: "PTSans", "Arial", sans-serif;
 }
 
 .main-header {
@@ -38,44 +36,38 @@ li {
     clear: both;
 }
 
+.inline {
+	display: inline-block;
+}
+
 .main-navigation {
     width: 1200px;
     font-size: 0;
+}
+
+.main-navigation ul {
+    list-style: none;
 }
 
 .main-navigation li {
     display: inline-block;	
     vertical-align: middle;
     font-size: 14px;
+    width: 20%;
+    text-align: center;
 }
 
-.column1 {
-	margin-left: 73px;
-	width: 127px;
-	margin-right: 93px;
-	
+.main-navigation a {
+	color: #000000;
+	text-decoration: none;
+	display: block;
+	padding: 15px 0;
 }
 
-.column2 {
-	width: 104px;
-	margin-right: 100px;
-}
 
-.column3 {
-	width: 150px;
-	height: 70px;
-	margin-right: 128px;
-}
 
-.column4 {
-	width: 124px;
-	margin-right: 100px;
-}
-
-.column5 {
-	width: 128px;
-	margin-right: 33px;
-
+.main-navigation .logo {
+	vertical-align: top;
 }
 
 .hello {
@@ -105,9 +97,18 @@ li {
 	
 }
 
+.description-text1 h2 {
+	color: #ffffff;
+}
+
 .description-text1 {
 	width: 400px;
 	float: left;
+	background-color: #81b3d2;
+	color: #ffffff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
 }
 
 .description-pic1 {
@@ -121,20 +122,26 @@ li {
     margin-bottom: 80px;
 }
 
-.description-block {
-	float:left;
-	width: 390px;
-	padding-right: 15px;
-
+.description-blocks {
+	background-color: #eeeeee;
 }
 
-.description-block:last-child {
-	padding-right: 0;
+.description-block {
+	float:left;
+	width: 400px;
+}
+
+.description-text2 h2 {
+	color: #ffffff;
 }
 
 .description-text2 {
 	width: 400px;
 	float: right;
+	background-color: #81b3d2;
+	color: #ffffff;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .description-pic2 {
@@ -143,12 +150,43 @@ li {
 	float: left;
 }
 
-
+.buy {
+	width: 1200px;
+}
 
 .buy-text {
 	width: 441px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.buy-order {
+	width: 570px;
+	
+}
+
+.buy-date {
+	width: 460px;
+	margin-bottom: 30px;
+}
+
+.buy-numbers {
+	width: 460px;
+	margin-bottom: 55px;
+}
+
+.fl-left {
+	float: left;
+}
+
+.fl-right {
+	float: right;
+}
+
+.btn-search {
+	width: 460px;
+	padding-top: 17px;
+	padding-bottom: 22px;
 }
 
 .map {
