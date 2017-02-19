@@ -5,13 +5,14 @@ body {
     color: #333333;
     font-weight: normal;
     font-family: "PTSans", "Arial", sans-serif;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     text-transform: uppercase;
 }
 
 h2,
 .footer-contacts a,
-.search-text .h2 {
+.search-text .h2,
+.hotel {
     font-size: 21px;
     line-height: 26px;
     color: #000000;
@@ -23,6 +24,8 @@ h2,
 .container {
     width: 1200px;
     margin: 0 auto;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .2);
+    background-color: #fff;
 }
 
 .clearfix::after {
@@ -32,19 +35,38 @@ h2,
 }
 
 .main-navigation {
-    width: 1200px;
-    padding-top: 14px;
-    padding-bottom: 16px;
+    display: block;
 }
 
-.main-navigation ul {
-    list-style: none;
+.main-nav-ul {
+    width: 40%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 14px;
 }
 
-.main-navigation li {
+.main-nav-ul-left {
+    float: left;
+}
+
+.main-nav-ul-right {
+    float: right;
+}
+
+.column1 {
+    float: left;
+    width: 50%;
     font-weight: bold;
-    width: 20%;
     line-height: 26px;
+    text-align: center;
+}
+
+.main-navigation a {
+    color: #000000;
+    text-decoration: none;
+    padding: 21px 0 21px;
+    display: block;
 }
 
 .main-navigation a:hover {
@@ -55,14 +77,8 @@ h2,
     color: #d5d5d5;
 }
 
-.main-navigation a {
-    color: #000000;
-    text-decoration: none;
-}
-
-.column1 {
-    float: left;
-    text-align: center;
+.column1-active a {
+    color: #766357;
 }
 
 .logo {
@@ -71,14 +87,10 @@ h2,
     width: 148px;
     height: 70px;
     position: absolute;
-    left: 600px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
     z-index: 2;
-}
-
-.column2 {
-    float: right;
-    text-align: center;
 }
 
 .hello-mask {
@@ -92,7 +104,6 @@ h2,
 .hello {
     position: relative;
     height: 453px;
-   
 }
 
 .hello img {
@@ -104,17 +115,17 @@ h2,
 .hello img:first-child {
     top: 75px;
     margin-left: -127px;
-     }
+}
 
 .welcome2 {
     top: 213px;
     margin-left: -229px;
-     } 
+}
 
 .hello-mask>img {
-	display: block;
-	max-width: 100%;
-	height: 57px;
+    display: block;
+    max-width: 100%;
+    height: 57px;
 }
 
 .subject {
@@ -123,11 +134,12 @@ h2,
     margin-left: auto;
     margin-bottom: 50px;
     text-align: center;
+    padding-top: 4px;
 }
 
 .font-subject {
     line-height: 26px;
-    margin-top: 30px;
+    margin-top: 27px;
 }
 
 .description {
@@ -135,7 +147,7 @@ h2,
 }
 
 .description-text {
-    width: 34%;
+    width: 33.333%;
     background-color: #81b3d2;
     color: #ffffff;
     text-align: center;
@@ -146,35 +158,47 @@ h2,
     float: left;
 }
 
+.description-text-blue {
+    padding-bottom: 52px;
+}
+
 .description-text h2,
 .description-block h2 {
     width: 180px;
-    color: #ffffff;
     line-height: 21px;
-    padding-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.description-block h2 {
-    color: #000000
+.description-text h2 {
+    color: #ffffff;
+    padding-bottom: 27px;
 }
 
-.description-number {
-    padding-bottom: 26px;
+.description-block h2 {
+    color: #000000;
+    padding-bottom: 25px;
+}
+
+.description-number-block {
+    padding-bottom: 25px;
+}
+
+.description-number-blue {
+    padding-bottom: 25px;
 }
 
 .description-pic1 {
     float: left;
-    width: 66%;
-    min-height: 258px;
+    width: 66.666%;
+    min-height: 256px;
     background: #9bb6d2 url("../img/background2.jpg") no-repeat center 20%;
 }
 
 .description-pic2 {
     float: left;
-    width: 66%;
-    min-height: 258px;
+    width: 66.666%;
+    min-height: 256px;
     background: #9bb6d2 url("../img/background3.jpg") no-repeat center 20%;
 }
 
@@ -239,7 +263,6 @@ h2,
 
 .buy {
     width: 1200px;
-    position: relative;
 }
 
 .buy-text {
@@ -281,10 +304,10 @@ h2,
 .buy-order {
     width: 570px;
     position: absolute;
-    top: 238px;
-    left: 26.25%;
+    right: 390px;
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
     z-index: 2;
+    animation: grom 1s;
 }
 
 .buy-order-show {
@@ -572,7 +595,7 @@ iframe {
 
 .btn-copyright {
     background: url("../img/sprite.png") no-repeat;
-    background-position: 0 -293px;
+    background-position: 0 -289px;
     display: inline-block;
     width: 120px;
     height: 45px;
@@ -582,12 +605,12 @@ iframe {
 
 .btn-copyright:hover {
     background: url("../img/sprite.png") no-repeat;
-    background-position: 0 -347px;
+    background-position: 0 -343px;
 }
 
 .btn-copyright:active {
     background: url("../img/sprite.png") no-repeat;
-    background-position: 0 -401px;
+    background-position: 0 -397px;
 }
 
 
@@ -595,7 +618,7 @@ iframe {
 
 .bay-form {
     width: 1200px;
-    min-height: 220px;
+    min-height: 218px;
     background: #bababa url(../img/background4.jpg);
     color: #ffffff;
     font-size: 14px;
@@ -656,6 +679,25 @@ iframe {
     left: -1px;
     background: url("../img/spritegal.png") no-repeat;
     background-position: 0 0;
+}
+
+.checkbox-custom:disabled {
+    width: 21px;
+    height: 21px;
+    border: 2px solid #6a6a6a;
+    border-radius: 5px;
+}
+
+.checkbox:checked + .checkbox-custom::before:disabled {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -3px;
+    left: -1px;
+    background: url("../img/spritegal.png") no-repeat;
+    background-position: 0 -29px;
 }
 
 .filter-range {
@@ -752,9 +794,8 @@ iframe {
 }
 
 .btn-transparent {
-    width: 140px;
+    width: 137px;
     display: block;
-    margin: 0 auto;
     padding: 6px 35px;
     font-size: 14px;
     line-height: 20px;
@@ -764,6 +805,7 @@ iframe {
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
+    margin-left: 85px;
 }
 
 .btn-transparent:hover {
@@ -771,11 +813,15 @@ iframe {
     background: #ffffff;
 }
 
+.filter-range-h3 {
+    margin-bottom: -18px;
+}
+
 .search-text {
     float: left;
     margin-left: 73px;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 29px;
+    padding-bottom: 29px;
 }
 
 .search-text span,
@@ -783,6 +829,10 @@ iframe {
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
+    margin-right: 20px;
+}
+
+.search-text-marg {
     margin-right: 30px;
 }
 
@@ -801,7 +851,7 @@ iframe {
     border: none;
 }
 
-.search-text .active {
+.active {
     color: #95bed8;
 }
 
@@ -828,11 +878,36 @@ iframe {
     display: inline-block;
     vertical-align: top;
     border: 6px solid transparent;
+    border-top: 10px solid #cccccc;
+}
+
+.tringle2-active {
+    border: 6px solid transparent;
+    border-top: 10px solid #81b3d2;
+}
+
+.tringle1:hover {
+    border: 6px solid transparent;
+    border-bottom: 10px solid #000000;
+}
+
+.tringle2:hover {
+    border: 6px solid transparent;
+    border-top: 10px solid #000000;
+}
+
+.tringle1:active {
+    border: 6px solid transparent;
+    border-bottom: 10px solid #81b3d2;
+}
+
+.tringle2:active {
+    border: 6px solid transparent;
     border-top: 10px solid #81b3d2;
 }
 
 .results {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
 }
 
 .result {
@@ -857,16 +932,37 @@ iframe {
     float: left;
 }
 
-.result-choice h2:hover {
+.hotel {
+    line-height: 20px;
+    width: 400px;
+}
+
+.hotel-price {
+    margin-top: 11px;
+    margin-bottom: 19px;
+}
+
+.hotel-item {
+    float: left;
+    width: 115px;
+}
+
+.hotel-number {
+    float: left;
+    width: 140px;
+    margin-right: 5px;
+}
+
+.hotel:hover {
     color: #81b3d2;
 }
 
-.result-choice h2:active {
+.hotel:active {
     color: #dadada;
 }
 
 .result-choice p {
-    margin-top: 5px;
+    margin-top: 11px;
     margin-bottom: 25px;
 }
 
@@ -884,10 +980,13 @@ iframe {
 }
 
 .btn-info {
-    width: 120px;
+    width: 110px;
     background-color: #81b3d2;
     border: 1px solid #81b3d2;
-    padding: 5px 10px;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    margin-right: 5px;
 }
 
 .btn-info:hover {
@@ -902,9 +1001,11 @@ iframe {
 }
 
 .btn-booking {
+    width: 142px;
     background-color: #766357;
     border: 1px solid #766357;
     padding: 5px 8px;
+    float: left;
 }
 
 .btn-booking:hover {
@@ -921,8 +1022,9 @@ iframe {
 .starts {
     margin-bottom: 45px;
     width: 100%;
-    font-size: 20px;
+    font-size: 21px;
     color: #81b3d2;
+    line-height: 18px;
 }
 
 .rating {
@@ -935,3 +1037,22 @@ iframe {
     width: 1200px;
     padding-bottom: 35px;
 }
+
+
+/*anime*/
+
+@keyframes grom {
+    0% {
+        transform: translateX(-1000px);
+    }
+    70% {
+        transform: translateX(30px);
+    }
+    90% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+...
