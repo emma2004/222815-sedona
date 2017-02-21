@@ -4,7 +4,7 @@ body {
     line-height: 21px;
     color: #333333;
     font-weight: normal;
-    font-family: "PTSans", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     background-color: #f2f2f2;
     text-transform: uppercase;
 }
@@ -17,7 +17,7 @@ h2,
     line-height: 26px;
     color: #000000;
     font-weight: bold;
-    font-family: "PTSans", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     text-decoration: none;
 }
 
@@ -147,7 +147,7 @@ h2,
 }
 
 .description-text {
-    width: 33.333%;
+    width: 33.333333%;
     background-color: #81b3d2;
     color: #ffffff;
     text-align: center;
@@ -190,16 +190,16 @@ h2,
 
 .description-pic1 {
     float: left;
-    width: 66.666%;
-    min-height: 256px;
-    background: #9bb6d2 url("../img/background2.jpg") no-repeat center 20%;
+    width: 66.666666%;
+    height: 256px;
+    overflow: hidden;
 }
 
 .description-pic2 {
     float: left;
-    width: 66.666%;
-    min-height: 256px;
-    background: #9bb6d2 url("../img/background3.jpg") no-repeat center 20%;
+    width: 66.666666%;
+    height: 256px;
+    overflow: hidden;
 }
 
 .description-icons {
@@ -212,7 +212,7 @@ h2,
 
 .description-block {
     float: left;
-    width: 33.334%;
+    width: 33.333333%;
     text-align: center;
     padding-left: 35px;
     padding-right: 35px;
@@ -263,6 +263,7 @@ h2,
 
 .buy {
     width: 1200px;
+    position: relative;
 }
 
 .buy-text {
@@ -293,7 +294,7 @@ h2,
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    font-family: "PTSans", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
     margin-left: 315px;
     cursor: pointer;
@@ -304,7 +305,8 @@ h2,
 .buy-order {
     width: 570px;
     position: absolute;
-    right: 390px;
+    left: 50%;
+    margin-left: -285px;
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
     z-index: 2;
     animation: grom 1s;
@@ -632,123 +634,102 @@ iframe {
     font-size: 16px;
     font-weight: bold;
     padding-top: 30px;
+    letter-spacing: -1px;
 }
 
-.bay-order-option1 {
+.bay-order-option {
     width: 255px;
     float: left;
-    padding-left: 73px;
+    padding-left: 72px;
     border: none;
 }
 
-.bay-order-option1 label {
+.bay-order-option label {
     display: block;
     margin-top: 25px;
 }
 
-.checkbox {
-    display: none;
-}
+.bay-order-checkbox {}
 
-.checkbox-custom {
-    position: relative;
-    width: 21px;
-    height: 21px;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-}
-
-.checkbox-custom,
-.label {
-    display: inline-block;
-    vertical-align: middle;
+.bay-order-checkbox label {
+    padding-left: 35px;
+    padding-top: 5px;
+    min-height: 22px;
+    background: url("../img/spritegal.png") no-repeat;
+    background-position: 0 -155px;
     cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
-.label {
-    padding-left: 10px;
-}
-
-.checkbox:checked + .checkbox-custom::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    top: -3px;
-    left: -1px;
+.bay-order-checkbox input[type="checkbox"]:checked + label {
     background: url("../img/spritegal.png") no-repeat;
-    background-position: 0 0;
+    background-position: 0 -91px;
 }
 
-.checkbox-custom:disabled {
-    width: 21px;
-    height: 21px;
-    border: 2px solid #6a6a6a;
-    border-radius: 5px;
-}
-
-.checkbox:checked + .checkbox-custom::before:disabled {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    top: -3px;
-    left: -1px;
+.bay-order-checkbox input[type="checkbox"]:disabled + label {
     background: url("../img/spritegal.png") no-repeat;
-    background-position: 0 -29px;
+    background-position: 0 -123px;
+}
+
+.bay-order-checkbox input[type="checkbox"]:checked:disabled + label {
+    background: url("../img/spritegal.png") no-repeat;
+    background-position: 0 -59px;
 }
 
 .filter-range {
-    width: 320px;
     float: right;
-    padding-top: 30px;
-    margin-right: 70px;
     border: none;
+    width: 350px;
+    padding-right: 70px;
+    text-align: center;
 }
 
-.price-controls {
-    width: 320px;
-    height: 36px;
-    margin-bottom: 20px;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    font-size: 0;
-    position: relative;
+.filter-range-h3 {
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    padding-top: 28px;
+    letter-spacing: -1px;
 }
 
-.price-controls::after {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 22px;
-    background: #ffffff;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.price-controls label {
-    display: inline-block;
+.price-control-filter {
+    text-transform: uppercase;
+    color: #fff;
     font-size: 14px;
-    line-height: 26px;
-    vertical-align: middle;
-    cursor: pointer;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 9px;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
-    width: 158px;
-    padding-left: 55px;
-}
-
-.price-controls input {
-    width: 50px;
-    color: #ffffff;
-    font: inherit;
-    background: none;
+.price-controls-inputs input {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+    vertical-align: top;
     border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.price-controls-inputs {
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 0;
+}
+
+.price-controls-inputs input:nth-child(2n+1) {
+    border-right: 2px solid #fff;
 }
 
 .range-controls {
@@ -813,10 +794,6 @@ iframe {
     background: #ffffff;
 }
 
-.filter-range-h3 {
-    margin-bottom: -18px;
-}
-
 .search-text {
     float: left;
     margin-left: 73px;
@@ -829,17 +806,27 @@ iframe {
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
-    margin-right: 20px;
 }
 
-.search-text-marg {
-    margin-right: 30px;
+.search-text-marg1 {
+    margin-right: 43px;
+}
+
+.search-text-marg2 {
+    margin-right: 36px;
 }
 
 .search-text a {
     text-decoration: none;
     border-bottom: 1px dotted #81b3d2;
     color: #cacaca;
+    margin-right: 29px;
+}
+
+.search-text a.active {
+    border-bottom: none;
+    color: #95bed8;
+    margin-right: 30px;
 }
 
 .search-text a:hover {
@@ -851,10 +838,6 @@ iframe {
     border: none;
 }
 
-.active {
-    color: #95bed8;
-}
-
 .search-pic {
     float: right;
     margin-right: 73px;
@@ -864,7 +847,7 @@ iframe {
 
 .tringle1 {
     position: relative;
-    left: -5px;
+    left: -6px;
     display: inline-block;
     vertical-align: middle;
     border: 6px solid transparent;
@@ -873,7 +856,7 @@ iframe {
 
 .tringle2 {
     position: relative;
-    top: 5px;
+    top: 7px;
     left: ;
     display: inline-block;
     vertical-align: top;
@@ -891,19 +874,9 @@ iframe {
     border-bottom: 10px solid #000000;
 }
 
-.tringle2:hover {
-    border: 6px solid transparent;
-    border-top: 10px solid #000000;
-}
-
 .tringle1:active {
     border: 6px solid transparent;
     border-bottom: 10px solid #81b3d2;
-}
-
-.tringle2:active {
-    border: 6px solid transparent;
-    border-top: 10px solid #81b3d2;
 }
 
 .results {
@@ -1004,7 +977,7 @@ iframe {
     width: 142px;
     background-color: #766357;
     border: 1px solid #766357;
-    padding: 5px 8px;
+    padding: 5px 17px;
     float: left;
 }
 
@@ -1020,7 +993,7 @@ iframe {
 }
 
 .starts {
-    margin-bottom: 45px;
+    margin-bottom: 48px;
     width: 100%;
     font-size: 21px;
     color: #81b3d2;
@@ -1030,7 +1003,7 @@ iframe {
 .rating {
     width: 112px;
     background-color: #f2f2f2;
-    padding: 5px 10px;
+    padding: 5px 14px 5px 3px;
 }
 
 .footer-catalog {
@@ -1055,4 +1028,6 @@ iframe {
         transform: translateX(0);
     }
 }
+
 ...
+/*letter-spacing
