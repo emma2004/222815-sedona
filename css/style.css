@@ -34,6 +34,10 @@ h2,
     clear: both;
 }
 
+.main-header {
+	position: relative;
+}
+
 .main-navigation {
     display: block;
 }
@@ -88,8 +92,8 @@ h2,
     height: 70px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
     top: 0;
+    transform: translateX(-50%);
     z-index: 2;
 }
 
